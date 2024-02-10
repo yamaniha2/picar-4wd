@@ -31,13 +31,15 @@
 </style>
 <body>
     <div id="header" class="dis_none">
-        <div class="back" onclick="Main.back()">
-            <img class="back_img" src="./image/back.png" >
+        <div class="back" onclick="Main.back()" style="height:auto">
+            <img class="back_img" src="./image/back.png" style="width:100%">
         </div>
         <div class="header_title">
             <span>Setting</span>
         </div>
         <div class="menu dis_none">
+            <img src="http://192.168.1.25:8080/?action=stream">
+            <!--
             <ul class="menu_list">
                 <li class="menu_item menu_item_ultrasonic">
                     <img class="menu_item_img" src="./image/ultrasonic_sensor.png" alt="">
@@ -68,6 +70,7 @@
                     <p>Settings</p>
                 </li>
             </ul>
+            -->
         </div>
     </div>
     <div class="mainContent">
@@ -125,7 +128,6 @@
                 </div>
             </div>
             <div class="manual_center">
-                <img src="http://192.168.1.25:8080/?action=stream">
                 <!--
                 <div class="ultrasonic">
                     <div class="ultrasonic_img_block">
