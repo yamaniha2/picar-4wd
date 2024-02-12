@@ -288,6 +288,13 @@
     height: 2.66rem;
 }
 
+.motor_2_up_div, .motor_2_down_div {
+    display: inline-block;
+    width: 1.33rem;
+    height: 2.66rem;
+    float:left;
+}
+
 .left_arrowKey_div {
     float: left;
     /* position: absolute;
