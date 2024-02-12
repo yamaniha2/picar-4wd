@@ -219,7 +219,7 @@ Manual.rightArrowEvent = function () {
     })
 }
 
-Manual.wheel.motor1UpEvent = function () {
+Manual.motor1UpEvent = function () {
     var timeout = '';
     $('.motor_1_up_div').on({
         "touchstart": function (e) {
@@ -236,7 +236,7 @@ Manual.wheel.motor1UpEvent = function () {
         }
     })
 }
-Manual.wheel.motor1DownEvent = function () {
+Manual.motor1DownEvent = function () {
     var timeout = '';
     $('.motor_1_down_div').on({
         "touchstart": function (e) {
@@ -253,7 +253,7 @@ Manual.wheel.motor1DownEvent = function () {
         }
     })
 }
-Manual.wheel.motor2UpEvent = function () {
+Manual.motor2UpEvent = function () {
     var timeout = '';
     $('.motor_2_up_div').on({
         "touchstart": function (e) {
@@ -270,7 +270,7 @@ Manual.wheel.motor2UpEvent = function () {
         }
     })
 }
-Manual.wheel.motor2DownEvent = function () {
+Manual.motor2DownEvent = function () {
     var timeout = '';
     $('.motor_2_down_div').on({
         "touchstart": function (e) {
@@ -287,7 +287,7 @@ Manual.wheel.motor2DownEvent = function () {
         }
     })
 }
-Manual.wheel.motor3UpEvent = function () {
+Manual.motor3UpEvent = function () {
     var timeout = '';
     $('.motor_3_up_div').on({
         "touchstart": function (e) {
@@ -304,7 +304,7 @@ Manual.wheel.motor3UpEvent = function () {
         }
     })
 }
-Manual.wheel.motor3DownEvent = function () {
+Manual.motor3DownEvent = function () {
     var timeout = '';
     $('.motor_3_down_div').on({
         "touchstart": function (e) {
@@ -321,7 +321,7 @@ Manual.wheel.motor3DownEvent = function () {
         }
     })
 }
-Manual.wheel.motor4UpEvent = function () {
+Manual.motor4UpEvent = function () {
     var timeout = '';
     $('.motor_4_up_div').on({
         "touchstart": function (e) {
@@ -338,7 +338,7 @@ Manual.wheel.motor4UpEvent = function () {
         }
     })
 }
-Manual.wheel.motor4DownEvent = function () {
+Manual.motor4DownEvent = function () {
     var timeout = '';
     $('.motor_4_down_div').on({
         "touchstart": function (e) {
