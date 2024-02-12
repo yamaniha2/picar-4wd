@@ -80,6 +80,14 @@ Manual.init = function () {
     Manual.downArrowEvent();
     Manual.leftArrowEvent();
     Manual.rightArrowEvent();
+    Manual.motor1UpEvent();
+    Manual.motor1DownEvent();
+    Manual.motor2UpEvent();
+    Manual.motor2DownEvent();
+    Manual.motor3UpEvent();
+    Manual.motor3DownEvent();
+    Manual.motor4UpEvent();
+    Manual.motor4DownEvent();
 }
  
 Manual.resize = function () {
