@@ -549,7 +549,7 @@ Manual.grayScaleReset = function () {
 $(document).ready(function(){
 	$('img.usb_video').error(function() {
 		$(this).attr({
-			src: 'image/no_image.png',
+			src: '/image/no_image.png',
 			alt: 'NoImage',
 			class: ''
 		});
