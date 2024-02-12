@@ -226,6 +226,8 @@ Manual.motor1UpEvent = function () {
         "touchstart": function (e) {
             e.preventDefault();
             Manual.sendValue['MS'] = ['on', 1, 100]
+            let nowTime = new Date();
+            document.getElementById("click_time").innerHTML = nowTime;
             timeout = setInterval(function(){
                 requireWebsocket.reqWs.send(JSON.stringify(Manual.sendValue))
             }, 30)
