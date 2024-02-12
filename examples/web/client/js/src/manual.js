@@ -541,3 +541,17 @@ Manual.ultrasonicReset = function () {
 Manual.grayScaleReset = function () {
     $('.line_of_inspection_item_danger').hide();
 }
+
+Manual.grayScaleReset = function () {
+    $('.line_of_inspection_item_danger').hide();
+}
+
+$(document).ready(function(){
+	$('img.usb_video').error(function() {
+		$(this).attr({
+			src: 'image/no_image.png',
+			alt: 'NoImage',
+			class: ''
+		});
+	});
+});
