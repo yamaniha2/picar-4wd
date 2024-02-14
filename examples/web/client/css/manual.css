@@ -15,6 +15,12 @@
     float: left;
 }
 
+.manual_center_button {
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
 .manual_right {
     width: 3.67rem;
     height: 100%;
@@ -64,10 +70,22 @@
     text-align: center;
 }
 
+.up_down_arrowKey_center {
+    width: 2.66rem;
+    height: 2.66rem;
+    background: rgba(255, 255, 255, .3);
+    border-radius: 50%;
+    margin-top: 0.2rem;
+    text-align: center;
+}
+
 .up_down_arrowKey img {
     width: 70%;
 }
 
+.up_down_arrowKey_center img {
+    width: 70%;
+}
 .up_arrowKey {
     margin-top: 2px;
 }
@@ -277,7 +295,7 @@
     background: rgba(255, 255, 255, .3);
     border-radius: 50%;
     margin-left: .6rem;
-    margin-top: 0.55rem;
+    margin-top: 0.2rem;
     position: relative;
 }
 
@@ -411,3 +429,9 @@ input[type=range]::-webkit-slider-thumb {
     margin-top: -12px;
 }
 
+.button_name {
+    width:100%;
+    text-align: center;
+    color:white;
+    font-weight:bold;
+}

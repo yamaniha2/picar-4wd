@@ -32,45 +32,15 @@
 <body>
     <div id="header" class="dis_none">
         <div class="back" onclick="Main.back()" style="width:auto;height:auto;">
-            <img class="back_img" src="./image/back.png" style="width:100%">
+            <img class="back_img" src="./image/back.png">
         </div>
         <div class="header_title">
             <span>Setting</span>
         </div>
-        <div class="menu dis_none" style="width:auto;height:auto;">
+        <div>
             <img class="usb_video" src="http://192.168.1.25:8080/?action=stream">
-            <!--
-            <ul class="menu_list">
-                <li class="menu_item menu_item_ultrasonic">
-                    <img class="menu_item_img" src="./image/ultrasonic_sensor.png" alt="">
-                    <p>Ultrasonic</p>
-                </li> 
-                <li class="menu_item menu_item_grayScale">
-                    <img class="menu_item_img" src="./image/grayScale_sensor.png" alt="">
-                    <p>Grayscale</p>
-                </li> 
-                <li class="menu_item menu_item_aviod">
-                    <img class="menu_item_img" src="./image/Avoidance.png" alt="">
-                    <p>Avoid</p>
-                </li>
-                <li class="menu_item menu_item_follow">
-                    <img class="menu_item_img" src="./image/follow_icon.png" alt="">
-                    <p>Follow</p>
-                </li>
-                <li class="menu_item menu_item_cliff">
-                    <img class="menu_item_img" src="./image/danger.png" alt="">
-                    <p>Cliff</p>
-                </li>
-                <li class="menu_item menu_item_path">
-                    <img class="menu_item_img" src="./image/inspection_icon.png" alt="">
-                    <p>Path</p>
-                </li>
-                <li class="menu_item menu_item_setting" style="opacity: 1">
-                    <img class="menu_item_img" src="./image/setting_icon.png" alt="">
-                    <p>Settings</p>
-                </li>
-            </ul>
-            -->
+        </div>
+        <div class="menu dis_none" style="width:auto;height:auto;">
         </div>
     </div>
     <div class="mainContent">
@@ -84,41 +54,7 @@
         </div>
         <div id="manualContent" class="dis_none">
             <div class="manual_left">
-                <!--
-                <div class="speedometer">
-                    <ul class="scale_list">
-                        <li class="scale_item"></li>
-                        <li class="scale_item"></li>
-                        <li class="scale_item"></li>
-                        <li class="scale_item"></li>
-                        <li class="scale_item"></li>
-                        <li class="scale_item"></li>
-                        <li class="scale_item"></li>
-                        <li class="scale_item"></li>
-                        <li class="scale_item"></li>
-                        <li class="scale_item"></li>
-                        <li class="scale_item"></li>
-                        <li class="scale_item"></li>
-                        <li class="scale_item"></li>
-                        <li class="scale_item"></li>
-                        <li class="scale_item"></li>
-                        <li class="scale_item"></li>
-                        <li class="scale_item"></li>
-                        <li class="scale_item"></li>
-                        <li class="scale_item"></li>
-                        <li class="scale_item"></li>
-                        <li class="scale_item"></li>
-                    </ul>
-                    <div class="speedValue">
-                        <span class="text">7</span>
-                        <span class="unit">m/s</span>
-                    </div>
-                </div>
-                <div class="mileage">
-                    <span>30km</span>
-                    <button class="mileage_reset" onclick="Manual.mileageReset()">reset</button>
-                </div>
-            -->
+                <div class="button_name">Motor_1</div>
                 <div class="up_down_arrowKey">
                     <div class="motor_1_up_div">
                         <img class="up_arrowKey" src="./image/arrow.png" alt="">
@@ -137,7 +73,17 @@
                 </div>
             </div>
             <div class="manual_center">
-                <p id="click_time">"time"</p>
+                <div class="button_name">Motor_3</div>    
+                <div class="manual_center_button">  
+                    <div class="up_down_arrowKey_center">
+                        <div class="motor_3_up_div">
+                            <img class="up_arrowKey" src="./image/arrow.png" alt="">
+                        </div>
+                        <div class="motor_3_down_div">
+                            <img class="down_arrowKey" src="./image/arrow.png" alt="">
+                        </div>
+                    </div>
+                </div> 
                 <!--
                 <div class="ultrasonic">
                     <div class="ultrasonic_img_block">
@@ -174,6 +120,7 @@
                     <input id="power_slider_input" type="range" value="50">
                 </div>
             -->
+                <div class="button_name">Motor_2</div>
                 <div class="left_right_arrowKey">
                     <div class="motor_2_up_div">
                         <img class="left_arrowKey" src="./image/arrow.png" alt="">
