@@ -299,23 +299,23 @@ Manual.tankLeft = function () {
     })
 }
 
-// Manual.motor1UpEvent = function () {
-//     var timeout = '';
-//     $('.motor_1_up_div').on({
-//         "touchstart": function (e) {
-//             e.preventDefault();
-//             Manual.sendValue['MS'] = ['on', 1, 100]
-//             timeout = setInterval(function(){
-//                 requireWebsocket.reqWs.send(JSON.stringify(Manual.sendValue))
-//             }, 30)
-//         },
-//         "touchend": function () {
-//             clearInterval(timeout);
-//             Manual.sendValue['MS'] = ['on', 1, 0]
-//             requireWebsocket.reqWs.send(JSON.stringify(Manual.sendValue))
-//         }
-//     })
-// }
+Manual.motor1UpEvent = function () {
+    var timeout = '';
+    $('.motor_1_up_div').on({
+        "touchstart": function (e) {
+            e.preventDefault();
+            Manual.sendValue['MS'] = ['on', 1, 100]
+            timeout = setInterval(function(){
+                requireWebsocket.reqWs.send(JSON.stringify(Manual.sendValue))
+            }, 30)
+        },
+        "touchend": function () {
+            clearInterval(timeout);
+            Manual.sendValue['MS'] = ['on', 1, 0]
+            requireWebsocket.reqWs.send(JSON.stringify(Manual.sendValue))
+        }
+    })
+}
 Manual.motor1DownEvent = function () {
     var timeout = '';
     $('.motor_1_down_div').on({
