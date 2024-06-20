@@ -188,6 +188,30 @@ def stop():
     right_front.set_power(0)
     right_rear.set_power(0)
 
+def tank_forward(power):
+    left_front.set_power(power) # motor 1
+    right_front.set_power(-power) # motor 2
+    left_rear.set_power(0) # motor 3
+    right_rear.set_power(0) # motor 4
+
+def tank_backward(power):
+    left_front.set_power(-power) # motor 1
+    right_front.set_power(power) # motor 2
+    left_rear.set_power(0) # motor 3
+    right_rear.set_power(0) # motor 4
+
+def tank_right(power):
+    left_front.set_power(-power) # motor 1
+    right_front.set_power(power) # motor 2
+    left_rear.set_power(0) # motor 3
+    right_rear.set_power(0) # motor 4
+
+def tank_left(power):
+    left_front.set_power(-power) # motor 1
+    right_front.set_power(power) # motor 2
+    left_rear.set_power(0) # motor 3
+    right_rear.set_power(0) # motor 4
+
 def set_motor_power(motor, power):
     if motor == 1:
         left_front.set_power(power)

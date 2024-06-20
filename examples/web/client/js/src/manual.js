@@ -227,25 +227,95 @@ Manual.rightArrowEvent = function () {
     })
 }
 
-
-Manual.motor1UpEvent = function () {
+Manual.tankForward = function () {
     var timeout = '';
-    $('.motor_1_up_div').on({
+    $('.right_arrowKey_div').on({
         "touchstart": function (e) {
             e.preventDefault();
-            Manual.sendValue['MS'] = ['on', 1, 100]
-            let nowTime = new Date();
+            Manual.sendValue['RC'] = 'tank_forward'
             timeout = setInterval(function(){
                 requireWebsocket.reqWs.send(JSON.stringify(Manual.sendValue))
             }, 30)
         },
         "touchend": function () {
             clearInterval(timeout);
-            Manual.sendValue['MS'] = ['on', 1, 0]
+            Manual.sendValue['RC'] = 'rest'
             requireWebsocket.reqWs.send(JSON.stringify(Manual.sendValue))
         }
     })
 }
+
+Manual.tankBackward = function () {
+    var timeout = '';
+    $('.right_arrowKey_div').on({
+        "touchstart": function (e) {
+            e.preventDefault();
+            Manual.sendValue['RC'] = 'tank_backward'
+            timeout = setInterval(function(){
+                requireWebsocket.reqWs.send(JSON.stringify(Manual.sendValue))
+            }, 30)
+        },
+        "touchend": function () {
+            clearInterval(timeout);
+            Manual.sendValue['RC'] = 'rest'
+            requireWebsocket.reqWs.send(JSON.stringify(Manual.sendValue))
+        }
+    })
+}
+
+Manual.tankRight = function () {
+    var timeout = '';
+    $('.right_arrowKey_div').on({
+        "touchstart": function (e) {
+            e.preventDefault();
+            Manual.sendValue['RC'] = 'tank_right'
+            timeout = setInterval(function(){
+                requireWebsocket.reqWs.send(JSON.stringify(Manual.sendValue))
+            }, 30)
+        },
+        "touchend": function () {
+            clearInterval(timeout);
+            Manual.sendValue['RC'] = 'rest'
+            requireWebsocket.reqWs.send(JSON.stringify(Manual.sendValue))
+        }
+    })
+}
+
+Manual.tankLeft = function () {
+    var timeout = '';
+    $('.right_arrowKey_div').on({
+        "touchstart": function (e) {
+            e.preventDefault();
+            Manual.sendValue['RC'] = 'tank_left'
+            timeout = setInterval(function(){
+                requireWebsocket.reqWs.send(JSON.stringify(Manual.sendValue))
+            }, 30)
+        },
+        "touchend": function () {
+            clearInterval(timeout);
+            Manual.sendValue['RC'] = 'rest'
+            requireWebsocket.reqWs.send(JSON.stringify(Manual.sendValue))
+        }
+    })
+}
+
+// Manual.motor1UpEvent = function () {
+//     var timeout = '';
+//     $('.motor_1_up_div').on({
+//         "touchstart": function (e) {
+//             e.preventDefault();
+//             Manual.sendValue['MS'] = ['on', 1, 100]
+//             timeout = setInterval(function(){
+//                 requireWebsocket.reqWs.send(JSON.stringify(Manual.sendValue))
+//             }, 30)
+//         },
+//         "touchend": function () {
+//             clearInterval(timeout);
+//             Manual.sendValue['MS'] = ['on', 1, 0]
+//             requireWebsocket.reqWs.send(JSON.stringify(Manual.sendValue))
+//         }
+//     })
+// }
 Manual.motor1DownEvent = function () {
     var timeout = '';
     $('.motor_1_down_div').on({
