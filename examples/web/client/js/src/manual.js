@@ -88,8 +88,8 @@ Manual.init = function () {
     Manual.motor1DownEvent();
     Manual.motor2UpEvent();
     Manual.motor2DownEvent();
-    Manual.motor3UpEvent();
-    Manual.motor3DownEvent();
+    //Manual.motor3UpEvent();
+    //Manual.motor3DownEvent();
     Manual.motor4UpEvent();
     Manual.motor4DownEvent();
 }
