@@ -161,7 +161,8 @@ Manual.setUltrasonicSean = function (data) {
 
 Manual.upArrowEvent = function () {
     var timeout = '';
-    $('.up_arrowKey_div').on({
+ //   $('.up_arrowKey_div').on({
+    $('.motor_3_up_div').on({
         "touchstart": function (e) {
             e.preventDefault();
             Manual.sendValue['RC'] = 'forward'
@@ -179,7 +180,8 @@ Manual.upArrowEvent = function () {
 
 Manual.downArrowEvent = function () {
     var timeout = '';
-    $('.down_arrowKey_div').on({
+//    $('.down_arrowKey_div').on({
+    $('.motor_3_down_div').on({
         "touchstart": function (e) {
             e.preventDefault();
             Manual.sendValue['RC'] = 'backward'
@@ -233,7 +235,7 @@ Manual.rightArrowEvent = function () {
 
 Manual.tankForward = function () {
     var timeout = '';
-    $('.motor_3_up_div').on({
+    $('.motor_3_up_div1').on({
         "touchstart": function (e) {
             e.preventDefault();
             Manual.sendValue['RC'] = 'tank_forward'
@@ -251,7 +253,7 @@ Manual.tankForward = function () {
 
 Manual.tankBackward = function () {
     var timeout = '';
-    $('.motor_3_down_div').on({
+    $('.motor_3_down_div1').on({
         "touchstart": function (e) {
             e.preventDefault();
             Manual.sendValue['RC'] = 'tank_backward'
