@@ -14,6 +14,14 @@ def Remote_control(control_flag,speed=50):
         fc.turn_left(speed)
     elif control_flag == 'turn_right':
         fc.turn_right(speed)
+    elif control_flag == 'tank_forward':
+        fc.tank_forward(speed)
+    elif control_flag == 'tank_backward':
+        fc.tank_backward(speed)
+    elif control_flag == 'tank_right':
+        fc.tank_right(speed)
+    elif control_flag == 'tank_left':
+        fc.tank_left(speed)
     else:
         fc.stop()
 
