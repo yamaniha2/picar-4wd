@@ -80,6 +80,10 @@ Manual.init = function () {
     Manual.downArrowEvent();
     Manual.leftArrowEvent();
     Manual.rightArrowEvent();
+    Manual.tankForward();
+    Manual.tankBackward();
+    Manual.tankRight();
+    Manual.tankLeft();
     Manual.motor1UpEvent();
     Manual.motor1DownEvent();
     Manual.motor2UpEvent();
